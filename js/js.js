@@ -219,7 +219,6 @@ paisSeleccionado.addEventListener("change", (evento) => {
     const encontroCoincidencia = acuerdosInternacionales.find(
       (acuerdo) => acuerdo.pais === nombrePais
     );
-    console.log(encontroCoincidencia.acuerdo);
     descripcionPais.innerHTML += `<ul><li><a href="#" onclick="permisoAcuerdosInternacionales();">Permiso para personas acogidas a acuerdos internacionales</a>: ${encontroCoincidencia.acuerdo} <a href="${encontroCoincidencia.url}" target="_blank">(Haz clic aquí para ir al Acuerdo)</a>.</li></ul>`;
   }
   // Por último se agrega el resto de las opciones y los botones con las opciones Si - con vínculo - No - sin vinculo:
